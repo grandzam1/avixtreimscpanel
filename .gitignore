@@ -1,0 +1,15 @@
+# Local credentials — never commit
+config.local.php
+.env
+
+# SQL dumps contain production data / PII
+SQL/
+**/SQL/
+
+# IDE
+.vscode/
+
+# Runtime logs / IDE history
+error_log
+**/error_log
+.specstory/

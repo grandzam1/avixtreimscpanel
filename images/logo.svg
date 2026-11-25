@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 120" width="680" height="120" fill="none">
+    <defs>
+        <!-- Neon Cyber Accent Gradients -->
+        <linearGradient id="avixPrimaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ccff00"/>
+            <stop offset="45%" stop-color="#00e5ff"/>
+            <stop offset="100%" stop-color="#00b074"/>
+        </linearGradient>
+
+        <linearGradient id="avixSteelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="60%" stop-color="#e2e8f0"/>
+            <stop offset="100%" stop-color="#94a3b8"/>
+        </linearGradient>
+
+        <linearGradient id="shieldFacetLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#18221c"/>
+            <stop offset="100%" stop-color="#0d1410"/>
+        </linearGradient>
+
+        <linearGradient id="shieldFacetRight" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#223028"/>
+            <stop offset="100%" stop-color="#121b16"/>
+        </linearGradient>
+
+        <linearGradient id="thrustRed" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff3b30"/>
+            <stop offset="100%" stop-color="#e82127"/>
+        </linearGradient>
+
+        <!-- Dynamic Laser Glow Filters -->
+        <filter id="neonPulseGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3.5" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <filter id="subtleCoreGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- ================= BRAND EMBLEM: THE HYPERSONIC QUANTUM DELTA ================= -->
+    <g transform="translate(14, 10)">
+        <!-- Outer Glowing Protective Hexa-Shield Rim -->
+        <polygon points="50,4 88,24 88,72 50,96 12,72 12,24" stroke="url(#avixPrimaryGrad)" stroke-width="2.5" fill="none" opacity="0.85" filter="url(#subtleCoreGlow)"/>
+
+        <!-- Left Facet Panel -->
+        <polygon points="50,6 14,25 14,70 50,94 50,50" fill="url(#shieldFacetLeft)"/>
+        <!-- Right Facet Panel -->
+        <polygon points="50,6 86,25 86,70 50,94 50,50" fill="url(#shieldFacetRight)"/>
+
+        <!-- Ambient Core Energy Field -->
+        <circle cx="50" cy="50" r="28" fill="#00e5ff" opacity="0.08" filter="url(#neonPulseGlow)"/>
+
+        <!-- Aerodynamic Wing / Hypersonic Chevron (Top Delta) -->
+        <path d="M50,14 L76,52 L62,52 L50,34 L38,52 L24,52 Z" fill="url(#avixPrimaryGrad)" filter="url(#neonPulseGlow)"/>
+
+        <!-- Lower Inverted Propulsion Wing (Kinetic Vector) -->
+        <path d="M50,86 L34,60 L44,60 L50,70 L56,60 L66,60 Z" fill="url(#thrustRed)"/>
+
+        <!-- Central Quantum Wealth Diamond (Arbitrage Engine) -->
+        <polygon points="50,38 60,50 50,62 40,50" fill="#ffffff" filter="url(#subtleCoreGlow)"/>
+        <circle cx="50" cy="50" r="3" fill="#ccff00"/>
+
+        <!-- Precision Energy Nodes (Clean Energy Satellites) -->
+        <circle cx="50" cy="5" r="2.5" fill="#ccff00"/>
+        <circle cx="87" cy="25" r="2.5" fill="#00e5ff"/>
+        <circle cx="87" cy="71" r="2.5" fill="#00b074"/>
+        <circle cx="13" cy="25" r="2.5" fill="#00e5ff"/>
+        <circle cx="13" cy="71" r="2.5" fill="#e82127"/>
+    </g>
+
+    <!-- ================= BRAND TYPOGRAPHY ================= -->
+    <g transform="translate(130, 8)">
+        <!-- WORDMARK: AVIX (Pure Titanium Diamond White) -->
+        <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="3" fill="url(#avixSteelGrad)">
+            AVIX
+        </text>
+
+        <!-- WORDMARK: TREIMS (High-Voltage Electric Lime with Neon Glow) -->
+        <text x="148" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="3" fill="#ccff00" filter="url(#subtleCoreGlow)">
+            TREIMS
+        </text>
+
+        <!-- Kinetic Accent Slashes (Fintech Arbitrage / Speed Indicators) -->
+        <rect x="365" y="24" width="3" height="34" rx="1.5" fill="#00e5ff" transform="skewX(-20)" opacity="0.9"/>
+        <rect x="374" y="24" width="3" height="34" rx="1.5" fill="#ccff00" transform="skewX(-20)" opacity="0.9"/>
+        <rect x="383" y="24" width="3" height="34" rx="1.5" fill="#e82127" transform="skewX(-20)" opacity="0.9"/>
+
+        <!-- Sleek Horizon Divider Line -->
+        <line x1="2" y1="72" x2="495" y2="72" stroke="url(#avixPrimaryGrad)" stroke-width="1.5" opacity="0.45"/>
+        <circle cx="2" cy="72" r="2" fill="#ccff00"/>
+        <circle cx="495" cy="72" r="2" fill="#00e5ff"/>
+
+        <!-- SUBTITLE / TAGLINE -->
+        <text x="3" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="4.2" fill="#94a3b8">
+            DIGITAL ASSETS <tspan fill="#ccff00">&bull;</tspan> ADVANCED TECHNOLOGY PLATFORM
+        </text>
+    </g>
+</svg>

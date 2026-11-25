@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /controller/
+Disallow: /uadmin/
+Disallow: /dashboard/
+Disallow: /fxinstant1/
+Disallow: /data/
+Disallow: /SQL/
+Disallow: /cgi-bin/
+Disallow: /update_db.php
+Disallow: /db.php
+Disallow: /config.php
+Disallow: /database_setup.sql
+
+Allow: /
+Allow: /about.php
+Allow: /register.php
+Allow: /signin.php
+Allow: /images/
+
+Sitemap: https://avxtsinc.com/sitemap.xml

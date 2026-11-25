@@ -1,0 +1,5 @@
+# Redirect all legacy /uadmin requests directly to /controller
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ /controller/$1 [R=301,L]
+</IfModule>

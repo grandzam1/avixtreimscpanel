@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" fill="none">
+    <defs>
+        <!-- Cold-Rolled 30X Stainless Steel Body Gradients -->
+        <linearGradient id="bodySteelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#b0b7be"/>
+            <stop offset="18%" stop-color="#d6dcde"/>
+            <stop offset="35%" stop-color="#8e969d"/>
+            <stop offset="55%" stop-color="#cbd2d7"/>
+            <stop offset="78%" stop-color="#9aa2a9"/>
+            <stop offset="100%" stop-color="#e2e7ea"/>
+        </linearGradient>
+
+        <linearGradient id="roofPillarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#e6ecef"/>
+            <stop offset="40%" stop-color="#a8b0b6"/>
+            <stop offset="100%" stop-color="#727a80"/>
+        </linearGradient>
+
+        <linearGradient id="doorLowerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#858d94"/>
+            <stop offset="60%" stop-color="#5a6167"/>
+            <stop offset="100%" stop-color="#34383c"/>
+        </linearGradient>
+
+        <!-- Pristine Tinted Armored Glass Gradient -->
+        <linearGradient id="glassGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+            <stop offset="0%" stop-color="#141a1e"/>
+            <stop offset="30%" stop-color="#1e272d"/>
+            <stop offset="70%" stop-color="#0c1013"/>
+            <stop offset="100%" stop-color="#050708"/>
+        </linearGradient>
+
+        <!-- Glass Specular Reflection Streak -->
+        <linearGradient id="glassReflection" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+            <stop offset="45%" stop-color="rgba(255,255,255,0.22)"/>
+            <stop offset="55%" stop-color="rgba(0,229,255,0.28)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+        </linearGradient>
+
+        <!-- Tire Rubber & Rim Gradients -->
+        <radialGradient id="tireGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="60%" stop-color="#121415"/>
+            <stop offset="85%" stop-color="#1d2023"/>
+            <stop offset="96%" stop-color="#0a0b0c"/>
+            <stop offset="100%" stop-color="#16181a"/>
+        </radialGradient>
+
+        <linearGradient id="aeroCoverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2a2e32"/>
+            <stop offset="50%" stop-color="#151719"/>
+            <stop offset="100%" stop-color="#383d42"/>
+        </linearGradient>
+
+        <!-- Headlight Neon Laser Glow Filter -->
+        <filter id="headlightLaserGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- Ambient Ground Contact Shadow -->
+        <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(0,0,0,0.85)"/>
+            <stop offset="60%" stop-color="rgba(0,0,0,0.5)"/>
+            <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+        </radialGradient>
+    </defs>
+
+    <!-- Ground Contact Shadow beneath tires -->
+    <ellipse cx="500" cy="318" rx="430" ry="14" fill="url(#groundShadow)"/>
+    <ellipse cx="225" cy="315" rx="95" ry="12" fill="rgba(0,0,0,0.9)"/>
+    <ellipse cx="775" cy="315" rx="95" ry="12" fill="rgba(0,0,0,0.9)"/>
+
+    <!-- ================= 1. REAR WHEEL WELL & ARCH RECESS ================= -->
+    <polygon points="120,240 160,175 290,175 330,240 315,240 280,190 170,190 135,240" fill="#08090a"/>
+
+    <!-- ================= 2. FRONT WHEEL WELL & ARCH RECESS ================= -->
+    <polygon points="670,240 710,175 840,175 880,240 865,240 830,190 720,190 685,240" fill="#08090a"/>
+
+    <!-- ================= 3. WHEELS (TIRES & CYBERTRUCK 7-SPOKE AERO COVERS) ================= -->
+    <!-- REAR WHEEL -->
+    <g id="rearWheel">
+        <!-- Outer Tire Tread -->
+        <circle cx="225" cy="245" r="72" fill="#0d0e10" stroke="#1c2024" stroke-width="4"/>
+        <!-- Rugged Tread Blocks -->
+        <circle cx="225" cy="245" r="66" fill="url(#tireGrad)"/>
+        <circle cx="225" cy="245" r="54" fill="#0a0b0d"/>
+        <!-- Angular 7-Fin Aero Wheel Cover -->
+        <circle cx="225" cy="245" r="48" fill="url(#aeroCoverGrad)" stroke="#3a4046" stroke-width="2"/>
+        <!-- Geometric Hex Center Cap -->
+        <polygon points="225,232 236,238 236,252 225,258 214,252 214,238" fill="#111315" stroke="#5a626a" stroke-width="1.5"/>
+        <circle cx="225" cy="245" r="5" fill="#8e969e"/>
+        <!-- 7 Aerodynamic Cap Fins radiating outwards -->
+        <line x1="225" y1="197" x2="225" y2="232" stroke="#25292d" stroke-width="4"/>
+        <line x1="267" y1="218" x2="236" y2="238" stroke="#25292d" stroke-width="4"/>
+        <line x1="271" y1="266" x2="236" y2="252" stroke="#25292d" stroke-width="4"/>
+        <line x1="235" y1="293" x2="225" y2="258" stroke="#25292d" stroke-width="4"/>
+        <line x1="189" y1="281" x2="214" y2="252" stroke="#25292d" stroke-width="4"/>
+        <line x1="179" y1="233" x2="214" y2="238" stroke="#25292d" stroke-width="4"/>
+        <line x1="202" y1="201" x2="225" y2="232" stroke="#25292d" stroke-width="4"/>
+    </g>
+
+    <!-- FRONT WHEEL (Facing Right) -->
+    <g id="frontWheel">
+        <!-- Outer Tire Tread -->
+        <circle cx="775" cy="245" r="72" fill="#0d0e10" stroke="#1c2024" stroke-width="4"/>
+        <!-- Rugged Tread Blocks -->
+        <circle cx="775" cy="245" r="66" fill="url(#tireGrad)"/>
+        <circle cx="775" cy="245" r="54" fill="#0a0b0d"/>
+        <!-- Angular 7-Fin Aero Wheel Cover -->
+        <circle cx="775" cy="245" r="48" fill="url(#aeroCoverGrad)" stroke="#3a4046" stroke-width="2"/>
+        <!-- Geometric Hex Center Cap -->
+        <polygon points="775,232 786,238 786,252 775,258 764,252 764,238" fill="#111315" stroke="#5a626a" stroke-width="1.5"/>
+        <circle cx="775" cy="245" r="5" fill="#8e969e"/>
+        <!-- 7 Aerodynamic Cap Fins radiating outwards -->
+        <line x1="775" y1="197" x2="775" y2="232" stroke="#25292d" stroke-width="4"/>
+        <line x1="817" y1="218" x2="786" y2="238" stroke="#25292d" stroke-width="4"/>
+        <line x1="821" y1="266" x2="786" y2="252" stroke="#25292d" stroke-width="4"/>
+        <line x1="785" y1="293" x2="775" y2="258" stroke="#25292d" stroke-width="4"/>
+        <line x1="739" y1="281" x2="764" y2="252" stroke="#25292d" stroke-width="4"/>
+        <line x1="729" y1="233" x2="764" y2="238" stroke="#25292d" stroke-width="4"/>
+        <line x1="752" y1="201" x2="775" y2="232" stroke="#25292d" stroke-width="4"/>
+    </g>
+
+    <!-- ================= 4. MAIN COLD-ROLLED STAINLESS STEEL EXOSKELETON ================= -->
+    <!-- Base Lower Chassis & Rocker Panels (Matte Black Armor) -->
+    <polygon points="70,240 120,240 160,185 290,185 330,240 670,240 710,185 840,185 880,240 920,236 925,248 885,254 660,254 340,254 65,250" fill="#1a1d20" stroke="#0e1012" stroke-width="2"/>
+
+    <!-- Main Outer Body Polygon (The Iconic Cybertruck Faceted Silhouette) -->
+    <!-- Rear Tailgate (x=70, y=148) -> Roof Apex (x=492, y=86) -> Windshield/Hood Base (x=790, y=144) -> Nose Tip (x=932, y=184) -> Lower Bumper (x=920, y=236) -->
+    <polygon points="
+        70,148
+        492,86
+        790,144
+        932,184
+        920,236
+        880,240
+        840,185
+        710,185
+        670,240
+        330,240
+        290,185
+        160,185
+        120,240
+        70,240
+    " fill="url(#bodySteelGrad)" stroke="#50575d" stroke-width="1.5"/>
+
+    <!-- Lower Body Section Shading (Below Beltline Crease) -->
+    <polygon points="
+        70,148
+        492,148
+        790,148
+        932,184
+        920,236
+        880,240
+        840,185
+        710,185
+        670,240
+        330,240
+        290,185
+        160,185
+        120,240
+        70,240
+    " fill="url(#doorLowerGrad)" opacity="0.45"/>
+
+    <!-- Sharp Horizontal Body Fold / Beltline Crease Line (x=70, y=148 to x=932, y=184) -->
+    <line x1="70" y1="148" x2="932" y2="184" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="70" y1="149" x2="932" y2="185" stroke="#3e4348" stroke-width="1.5" opacity="0.9"/>
+
+    <!-- Top Roof Cantrail & A-Pillar Highlight Line -->
+    <polyline points="70,148 492,86 790,144 932,184" stroke="#ffffff" stroke-width="2.5" opacity="0.85"/>
+
+    <!-- Rear Vault Bed Cover (Slanted descending panel from Apex to Tailgate) -->
+    <polygon points="72,148 488,88 488,96 72,154" fill="url(#roofPillarGrad)" opacity="0.6"/>
+
+    <!-- ================= 5. PRISTINE TINTED FLUSH CABIN WINDOWS ================= -->
+    <!-- Window Frame Aperture (Dark Surround) -->
+    <polygon points="280,144 492,90 772,144 768,148 284,148" fill="#080b0d"/>
+
+    <!-- Rear Passenger & Vault Quarter Window -->
+    <polygon points="285,145 400,126 400,145" fill="url(#glassGrad)"/>
+    <!-- Rear Door Window -->
+    <polygon points="408,125 488,93 488,145 408,145" fill="url(#glassGrad)"/>
+    <!-- Front Door Window -->
+    <polygon points="496,93 640,118 640,145 496,145" fill="url(#glassGrad)"/>
+    <!-- Front Windshield Side Quarter Glass -->
+    <polygon points="646,119 768,142 768,145 646,145" fill="url(#glassGrad)"/>
+
+    <!-- Cabin Glass Pillars (Matte Black B-Pillar & C-Pillar) -->
+    <rect x="488" y="90" width="8" height="56" fill="#0c0e10"/>
+    <rect x="400" y="122" width="8" height="24" fill="#0c0e10"/>
+    <rect x="640" y="117" width="6" height="29" fill="#0c0e10"/>
+
+    <!-- High-Gloss Diagonal Glass Reflection (Pristine, Brand New Finish) -->
+    <polygon points="350,145 480,95 530,95 400,145" fill="url(#glassReflection)"/>
+    <polygon points="560,145 660,110 700,110 600,145" fill="url(#glassReflection)"/>
+
+    <!-- Glass Edge Chrome Trim -->
+    <polyline points="285,145 492,91 770,143" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"/>
+
+    <!-- ================= 6. BODY PANEL SHUT LINES (DOORS & TAILGATE) ================= -->
+    <!-- Front Door Cut Line -->
+    <line x1="492" y1="148" x2="492" y2="240" stroke="#2b2e32" stroke-width="2"/>
+    <line x1="493" y1="148" x2="493" y2="240" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+    <!-- Rear Door Cut Line -->
+    <line x1="340" y1="148" x2="340" y2="240" stroke="#2b2e32" stroke-width="2"/>
+    <line x1="341" y1="148" x2="341" y2="240" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+    <!-- Front Fender Cut Line -->
+    <line x1="710" y1="185" x2="710" y2="152" stroke="#2b2e32" stroke-width="2"/>
+    <line x1="711" y1="185" x2="711" y2="152" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+    <!-- Flush Capacitive Door Handle Touch Pads (Minimalist Cyber Finish) -->
+    <rect x="502" y="154" width="16" height="4" rx="2" fill="#181b1d" stroke="#50565b" stroke-width="0.8"/>
+    <rect x="350" y="154" width="16" height="4" rx="2" fill="#181b1d" stroke="#50565b" stroke-width="0.8"/>
+
+    <!-- Minimalist Aerodynamic Triangular Side Mirror (Facing Right) -->
+    <polygon points="656,134 682,130 686,140 656,141" fill="#1a1d20" stroke="#50565d" stroke-width="1"/>
+
+    <!-- ================= 7. LIGHTING SYSTEMS (FACING RIGHT) ================= -->
+    <!-- FRONT NOSE LED LIGHTBAR (The Signature Cybertruck Laser Blade) -->
+    <!-- Front Lightbar Casing at x=910-932, y=178-184 -->
+    <polygon points="915,178 932,182 930,188 912,185" fill="#080a0c"/>
+    <!-- Laser White / Electric Cyan LED Blade -->
+    <polygon points="916,179 934,183 932,187 914,184" fill="#ffffff" filter="url(#headlightLaserGlow)"/>
+    <polygon points="918,180 933,183 932,186 916,183" fill="#e0f7ff"/>
+
+    <!-- Forward Projected Headlight Beam (Sleek Horizontal Cut) -->
+    <polygon points="933,183 995,175 995,195 933,186" fill="url(#glassReflection)" opacity="0.6"/>
+
+    <!-- REAR TAILLIGHT STRIP (Tailgate Edge) -->
+    <line x1="70" y1="148" x2="70" y2="158" stroke="#ff2222" stroke-width="3" filter="url(#headlightLaserGlow)"/>
+    <line x1="70" y1="149" x2="70" y2="157" stroke="#ffffff" stroke-width="1.2"/>
+
+    <!-- Angular Wheel Arch Flares (Tough Matte Composite Overfenders) -->
+    <polygon points="114,240 156,177 294,177 336,240 326,240 288,183 162,183 124,240" fill="#202427" stroke="#121416" stroke-width="1.5"/>
+    <polygon points="664,240 706,177 844,177 886,240 876,240 838,183 712,183 674,240" fill="#202427" stroke="#121416" stroke-width="1.5"/>
+
+    <!-- Specular Highlight on Stainless Steel Front Hood Rake -->
+    <line x1="792" y1="145" x2="930" y2="183" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    <!-- Specular Highlight on Vault Slope -->
+    <line x1="72" y1="149" x2="490" y2="87" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+</svg>
